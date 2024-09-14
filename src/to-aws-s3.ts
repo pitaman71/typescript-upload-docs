@@ -1,3 +1,4 @@
+#!ts-node
 import { Tasks } from 'typescript-code-instruments';
 import { PutObjectCommand, S3Client } from '@aws-sdk/client-s3';
 import { readdir, readFile } from 'fs/promises';
