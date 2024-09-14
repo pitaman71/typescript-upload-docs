@@ -8,18 +8,23 @@
     "lib/**/*"
   ],
   "scripts": {
-    "clean": "rm -rf package-lock.json node_modules"
+    "clean": "rm -rf package-lock.json node_modules",
+    "build": "tsc"
   },
   "author": "Alan Pita",
   "license": "ISC",
   "devDependencies": {
     "@aws-sdk/client-s3": "^3.651.0",
     "@aws-sdk/credential-providers": "^3.650.0",
-    "typescript-code-instruments": "^1.0.6",
+    "@types/luxon": "^3.4.2",
     "@types/node": "^22.5.4",
     "node": "^22.8.0",
     "tslint": "^6.1.3",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "typescript-code-instruments": "^1.0.6"
+  },
+  "dependencies": {
+    "luxon": "^3.5.0"
   }
 }
