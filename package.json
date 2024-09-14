@@ -4,6 +4,9 @@
   "description": "Node utility for uploading typescript docs to cloud storage.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "bin": {
+    "typescript-upload-docs": "./index.ts"
+  },
   "files": [
     "lib/**/*"
   ],
