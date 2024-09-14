@@ -1,4 +1,4 @@
-import { Tasks } from '@pitaman71/code-instruments';
+import { Tasks } from 'typescript-code-instruments';
 import { PutObjectCommand, S3Client } from '@aws-sdk/client-s3';
 import { readdir, readFile } from 'fs/promises';
 import * as path from 'path';
