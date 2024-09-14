@@ -1,12 +1,9 @@
 {
   "name": "typescript-upload-docs",
-  "version": "1.0.3",
+  "version": "1.0.8",
   "description": "Node utility for uploading typescript docs to cloud storage.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "bin": {
-    "typescript-upload-docs": "./index.ts"
-  },
   "files": [
     "lib/**/*"
   ],
@@ -17,17 +14,17 @@
   "author": "Alan Pita",
   "license": "ISC",
   "devDependencies": {
-    "@aws-sdk/client-s3": "^3.651.0",
-    "@aws-sdk/credential-providers": "^3.650.0",
     "@types/luxon": "^3.4.2",
     "@types/node": "^22.5.4",
     "node": "^22.8.0",
     "tslint": "^6.1.3",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^5.3.3",
-    "typescript-code-instruments": "^1.0.6"
+    "typescript": "^5.3.3"
   },
   "dependencies": {
-    "luxon": "^3.5.0"
+    "@aws-sdk/client-s3": "^3.651.0",
+    "@aws-sdk/credential-providers": "^3.650.0",
+    "luxon": "^3.5.0",
+    "typescript-code-instruments": "^1.0.6"
   }
 }
