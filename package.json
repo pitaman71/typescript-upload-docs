@@ -1,7 +1,8 @@
 {
   "name": "typescript-upload-docs",
-  "version": "1.0.8",
+  "version": "1.0.17",
   "description": "Node utility for uploading typescript docs to cloud storage.",
+  "type": "commonjs",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -25,6 +26,8 @@
     "@aws-sdk/client-s3": "^3.651.0",
     "@aws-sdk/credential-providers": "^3.650.0",
     "luxon": "^3.5.0",
-    "typescript-code-instruments": "^1.0.6"
+    "mime": "^4.0.4",
+    "tsx": "^4.19.1",
+    "typescript-code-instruments": "^1.0.10"
   }
 }

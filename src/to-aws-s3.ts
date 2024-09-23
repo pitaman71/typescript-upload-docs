@@ -1,3 +1,4 @@
+import mime from 'mime';
 import { Tasks } from 'typescript-code-instruments';
 import { PutObjectCommand, S3Client } from '@aws-sdk/client-s3';
 import { readdir, readFile } from 'fs/promises';
@@ -29,6 +30,8 @@ export async function uploadDir(localPath: string, bucketName: string, prefix: s
                 Key: prefix + path.relative(localPath, filePath),
                 Bucket: bucketName,
                 Body: fileContents,
+                ContentType: mime.getType(filePath) || undefined,
+                ACL:'public-read'
             }))
         )
     ));
